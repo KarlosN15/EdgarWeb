@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Premiun Wash RD - Servicios</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Navigation -->
+            <header
+                class="fixed top-0 left-0 w-full z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 shadow-sm px-6 md:px-20 py-4 bg-white/95 backdrop-blur-md dark:bg-slate-900/95 dark:border-slate-800">
+                <a href="index.html" class="flex items-center gap-3 text-primary dark:text-slate-100 cursor-pointer">
+                    <div class="size-8">
+                        <span class="material-symbols-outlined text-4xl">local_car_wash</span>
+                    </div>
+                    <h2 class="text-xl font-extrabold leading-tight tracking-tight">Premiun Wash RD</h2>
+                </a>
+                <div class="flex flex-1 justify-end gap-6 items-center">
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors"
+                            href="index.html">Inicio</a>
+                        <a class="text-primary dark:text-white text-sm font-bold border-b-2 border-primary transition-colors"
+                            href="services.html">Servicios</a>
+                        <a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors"
+                            href="reviews.html">Reseñas</a>
+                        <a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors"
+                            href="about.html">Sobre Nosotros</a>
+                    </nav>
+
+                    <button onclick="window.location.href='booking.html'"
+                        class="relative hidden md:flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">
+                        <span>Reservar Ahora</span>
+                        <span
+                            class="cart-counter hidden absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold h-5 min-w-[20px] px-1.5 flex items-center justify-center rounded-full pointer-events-none border-2 border-white shadow-sm">0</span>
+                    </button>
+                </div>
+            </header>
+            <main class="flex-1">
+                <!-- Hero Section -->
+                <section class="relative w-full py-16 px-6 md:px-20 bg-slate-100 dark:bg-slate-900 overflow-hidden">
+                    <div class="absolute inset-0 opacity-10 pointer-events-none">
+                        <div
+                            class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,_#003366_0%,_transparent_50%)]">
+                        </div>
+                    </div>
+                    <div class="max-w-5xl mx-auto relative z-10">
+                        <span class="text-primary font-bold tracking-widest uppercase text-xs">Servicios
+                            de Detallado
+                            Premium</span>
+                        <h1
+                            class="text-4xl md:text-6xl font-black text-slate-900 dark:text-slate-100 mt-4 leading-tight">
+                            Cuidado Élite para tu <br /><span class="text-primary">Inversión
+                                Automotriz</span></h1>
+                        <p class="mt-6 text-slate-600 dark:text-slate-400 text-lg max-w-2xl leading-relaxed">
+                            Desde
+                            lavados de mantenimiento básicos hasta recubrimientos cerámicos con
+                            calidad de exposición,
+                            ofrecemos soluciones de detallado integrales adaptadas a las necesidades
+                            específicas de tu
+                            vehículo.</p>
+                    </div>
+                </section>
+                <!-- Service Filters -->
+                <div
+                    class="px-6 md:px-20 py-8 border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark sticky top-[73px] z-40">
+                    <div class="max-w-7xl mx-auto flex flex-wrap gap-4 overflow-x-auto pb-2 scrollbar-hide">
+                        <button class="px-6 py-2 rounded-full bg-primary text-white text-sm font-bold">Todos
+                            los
+                            Servicios</button>
+                        <button
+                            class="px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-semibold hover:bg-primary/10 transition-colors">Exterior</button>
+                        <button
+                            class="px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-semibold hover:bg-primary/10 transition-colors">Interior</button>
+                        <button
+                            class="px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-semibold hover:bg-primary/10 transition-colors">Corrección
+                            de Pintura</button>
+                        <button
+                            class="px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-semibold hover:bg-primary/10 transition-colors">Protección</button>
+                        <button
+                            class="px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-semibold hover:bg-primary/10 transition-colors">Flotas</button>
+                    </div>
+                </div>
+                <!-- Services Grid -->
+                <section class="px-6 md:px-20 py-16 bg-background-light dark:bg-background-dark">
+                    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Exterior Wash -->
+                        <div
+                            class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all">
+                            <div class="h-48 overflow-hidden relative">
+                                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    data-alt="Close up of high pressure water spraying car wheel"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwnsJcqNU7czf3xpAjKnDFE5y6FEVVRtP3wfrOprqThr6K1NGpxsKhnauCGEtQj603q9A1E8wUYlNzACPiD8dzdR6VpRGfiVdJIb28tfBymCDGDZ72y0Lyrv6DkeguATu0CmycKCff7jwlsTCIeGBqOokueBrNxCdO6JlSJW_FWt81pCQCvKTgjjaJqbV3tr8qygM_mI4dBITEvxPiyXIiS1XUQHb7av7IUUaPYQl6iTkHyJOZ31mjp_3A5DwNBt8azOu4F8VybpAf" />
+                                <div
+                                    class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                    Más Popular</div>
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="material-symbols-outlined text-primary">local_car_wash</span>
+                                    <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">
+                                        Lavado Exterior
+                                        Exclusivo</h3>
+                                </div>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">
+                                    Remojo profundo con
+                                    espuma, lavado a mano con microfibra, limpieza de rines y
+                                    llantas, y protección de
+                                    sellador en aerosol. Deja un brillo de exhibición sin marcas.
+                                </p>
+                                <div class="flex items-end justify-between mt-auto">
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="text-xs text-slate-400 dark:text-slate-500 font-medium">Desde</span>
+                                        <span class="text-2xl font-black text-primary">$45</span>
+                                    </div>
+                                    <button onclick="addToCart('Lavado Exterior Superior', 45)"
+                                        class="bg-primary text-white hover:bg-primary/90 px-4 py-2 rounded-lg font-bold text-sm transition-all shadow-md shadow-primary/20">Agregar
+                                        a la Reserva</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Interior Detailing -->
+                        <div
+                            class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all">
+                            <div class="h-48 overflow-hidden relative">
+                                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    data-alt="Immaculate leather car interior and dashboard detail"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLBCOosNv0WKv7HYN0MtTpgCgJ5DNXQfeTI4LsE_QZPQ-osNhOLajNHXE54ywkD0Li6KfEpZJE2PJsn3xfAotW3Gz8ISDHAkV9C6yxpKwI2Kf2-xLvgc10yiya99O5KpNMqdTIwr6IhamlXoma3rGvORWWsuapFLW7hwQG3-tKqW9iGghJ3K0eLpeshTe6ctJSMWYrDGJaLHpSyGkZ5sKDqPxDsI_D54W-hFFCzN7kyiICQgXhE0iSJA0T5B5Ti6zL7rxi1QGkCwW_" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="material-symbols-outlined text-primary">vacuum</span>
+                                    <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">
+                                        Revitalización
+                                        Interior Completa</h3>
+                                </div>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">
+                                    Limpieza a vapor de
+                                    todas las superficies, acondicionamiento de cuero, aspirado
+                                    profundo, eliminación de
+                                    manchas y saneamiento del aire acondicionado. Respira aire
+                                    limpio nuevamente.</p>
+                                <div class="flex items-end justify-between mt-auto">
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="text-xs text-slate-400 dark:text-slate-500 font-medium">Desde</span>
+                                        <span class="text-2xl font-black text-primary">$120</span>
+                                    </div>
+                                    <button onclick="addToCart('Revitalización Interior Completa', 120, '120 mins')"
+                                        class="bg-primary text-white hover:bg-primary/90 px-4 py-2 rounded-lg font-bold text-sm transition-all shadow-md shadow-primary/20">Agregar
+                                        a la Reserva</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Ceramic Coating -->
+                        <div
+                            class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all">
+                            <div class="h-48 overflow-hidden relative">
+                                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    data-alt="Reflective metallic car paint with hydrophobic water beads"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjcGB40vk5FCOK1Mp7Lk_hLzGLFWXYT9eM47XxCxxR6NjAnyTESbCOmALzQYZnC5K4sDk4MGGnnhm7yRFiDyOo8ZXcTuN1x4dqC3Ynr81QiasgcbXn-la5FyzDft-GFuj_ug0jFroby1ouiyBcU_aZINsXMoY8YVP9R9kyyWMAXKOsSkFH5I36XgeNIbKA-kg0Rvr6O5n1c3Z7RZq500cmL6SJXMDO9GAUbg8HRRHpa7DZMfabrv8SpgRsySYztF3-7f_8bHD63Qf9" />
+                                <div
+                                    class="absolute top-4 left-4 bg-slate-800 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                    Protección Premium</div>
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="material-symbols-outlined text-primary">diamond</span>
+                                    <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">
+                                        Escudo Cerámico de
+                                        Grafeno</h3>
+                                </div>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">
+                                    Protección por años
+                                    contra rayos UV, productos químicos y rayones. Propiedades
+                                    repelentes al agua
+                                    inigualables y claridad óptica profunda.</p>
+                                <div class="flex items-end justify-between mt-auto">
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="text-xs text-slate-400 dark:text-slate-500 font-medium">Desde</span>
+                                        <span class="text-2xl font-black text-primary">$599</span>
+                                    </div>
+                                    <button onclick="addToCart('Paquete de Detalles Completo', 599)"
+                                        class="bg-primary text-white hover:bg-primary/90 px-4 py-2 rounded-lg font-bold text-sm transition-all shadow-md shadow-primary/20">Agregar
+                                        a la Reserva</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Paint Correction -->
+                        <div
+                            class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all">
+                            <div class="h-48 overflow-hidden relative">
+                                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    data-alt="Professional buffer tool on black car paint"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDREMlU7Gr3O8dhfC57z74c8IYdhrNT4F-JAPKDxvwaF_Q6i6RvHOhgWL7UainTKAQbwCNNVWJsJuj7OgRh4D_JQw1y9CVtBH_jwbjMnmnSyeD4bsACEoSz1N2ZOeUliRPgYWejYyFusElxFL4DbBORBthdvXueB-EAK-JQec671vzKASX8wfqyoD68dzhxplcjzc7LDm60DgrCF0eA2Tg-P6GCtxbExnP-lEPhXsPKHwdz8AU0cOxnFweVIhknqluDXq93qul4mR8C" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="material-symbols-outlined text-primary">auto_fix_high</span>
+                                    <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">
+                                        Corrección de Doble
+                                        Etapa</h3>
+                                </div>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">
+                                    Pulido profesional a
+                                    máquina para eliminar el 90% de las marcas de remolino, pequeños
+                                    rayones y
+                                    oxidación. Restaura el reflejo tipo espejo.</p>
+                                <div class="flex items-end justify-between mt-auto">
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="text-xs text-slate-400 dark:text-slate-500 font-medium">Desde</span>
+                                        <span class="text-2xl font-black text-primary">$250</span>
+                                    </div>
+                                    <button onclick="addToCart('Corrección de Doble Etapa', 250, '3 Hrs')"
+                                        class="bg-primary text-white hover:bg-primary/90 px-4 py-2 rounded-lg font-bold text-sm transition-all shadow-md shadow-primary/20">Agregar
+                                        a la Reserva</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fleet Services -->
+                        <div
+                            class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all">
+                            <div class="h-48 overflow-hidden relative">
+                                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    data-alt="Row of professional service vans in a fleet"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKFyKTROUxXNveImgQjTDI3t0xxCCaxzczdVRHu8dAeZ8ykUvgGuMxjjB4U6AECrqg9LGECnvaa9Pyt9EFSQ4c211QozpfrjLBBpOFv_Cgjr3vYA3MeM5EhyzPdQhbyOaQc1gpBKLhT7hoTouz7rZBiRDS14MS_IgE0MYdO9EPNoSsJfpLmLuLRUR6ep-DA4eIUe0ZpMhi_XLnlBocbq1JX4XYKk-ZnEQpmDrICVQTeIDYYtcPMFxpmlF04cxvKO3AauzXBNe5jqrz" />
+                                <div
+                                    class="absolute top-4 left-4 bg-primary/80 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                    Soluciones B2B</div>
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="material-symbols-outlined text-primary">groups</span>
+                                    <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">
+                                        Plan de Flota
+                                        Corporativa</h3>
+                                </div>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">
+                                    Calendarios de
+                                    mantenimiento personalizados para vehículos de empresa. Asegúra
+                                    que tu marca siempre
+                                    luzca excelente con precios por volumen.</p>
+                                <div class="flex items-end justify-between mt-auto">
+                                    <div class="flex flex-col">
+                                        <span class="text-xs text-slate-400 dark:text-slate-500 font-medium">Planes
+                                            mensuales desde</span>
+                                        <span class="text-2xl font-black text-primary">$299</span>
+                                    </div>
+                                    <button onclick="document.getElementById('fleet-modal').classList.remove('hidden')"
+                                        class="bg-primary text-white hover:bg-primary/90 px-4 py-2 rounded-lg font-bold text-sm transition-all shadow-md shadow-primary/20">Más
+                                        Información</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Headlight Restoration -->
+                        <div
+                            class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all">
+                            <div class="h-48 overflow-hidden relative">
+                                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    data-alt="Clear modern car headlight showing detail"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDysTaJgN45Z-740jIbZ6IzP_rs2t_q8X8GTBCU6yz8hQ9XkUl5q9pdJYZHsTNZNZwbC5D_OPeNIpxCrlTGJVRIeEfjsaGiqpol0GO46ABFP9-F8I53_n1HOuAI1a-c_TF7n474arTN3AWQG0NXZ82XiKHJfIyn93dAV2Kyjv2-5fvAKgNqWu27Cczjrx6ILSuGoa_lDiFCOtPjHKUt9BNvCfm9hoBUi2q_181Z51wf2ByuzJ5wKlKA_bmtwPKVkofNbc9J2-r187yK" />
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="material-symbols-outlined text-primary">flare</span>
+                                    <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">
+                                        Restauración
+                                        Cristalina de Luces</h3>
+                                </div>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">
+                                    Eliminación de
+                                    oxidación y opacidad de los faros. Mejorando la visibilidad
+                                    nocturna y la estética
+                                    general de tu vehículo.</p>
+                                <div class="flex items-end justify-between mt-auto">
+                                    <div class="flex flex-col">
+                                        <span class="text-xs text-slate-400 dark:text-slate-500 font-medium">Por
+                                            par</span>
+                                        <span class="text-2xl font-black text-primary">$80</span>
+                                    </div>
+                                    <button onclick="addToCart('Restauración Cristalina de Luces', 80)"
+                                        class="bg-primary text-white hover:bg-primary/90 px-4 py-2 rounded-lg font-bold text-sm transition-all shadow-md shadow-primary/20">Agregar
+                                        a la Reserva</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Custom Quote Section -->
+                <section class="px-6 md:px-20 py-20 bg-primary text-white">
+                    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                        <div class="flex-1 text-center md:text-left">
+                            <h2 class="text-3xl md:text-5xl font-black mb-6">¿Necesitas un paquete
+                                de detallado
+                                personalizado?</h2>
+                            <p
+                                class="text-primary/20 bg-white/10 p-6 rounded-xl border border-white/20 text-lg leading-relaxed text-slate-100">
+                                Ya sea una restauración de automóvil clásico, una autocaravana de
+                                gran tamaño o un
+                                detallado especializado de motocicletas, nuestro equipo de expertos
+                                puede diseñar una
+                                solución a medida para tu vehículo específico.
+                            </p>
+                            <div class="mt-10 flex flex-wrap gap-4 justify-center md:justify-start">
+                                <button onclick="window.location.href='booking.html'"
+                                    class="px-8 py-4 bg-white text-primary rounded-xl font-black text-lg shadow-lg hover:bg-slate-100 transition-all">Obtén
+                                    una Cotización Gratis</button>
+                                <a href="tel:+18095551234"
+                                    class="inline-block px-8 py-4 bg-transparent border-2 border-white/40 text-white rounded-xl font-black text-lg hover:bg-white/10 transition-all">Llama
+                                    a un Especialista</a>
+                            </div>
+                        </div>
+                        <div class="flex-1 w-full max-w-md">
+                            <div class="bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-2xl">
+                                <h3 class="text-slate-900 dark:text-slate-100 text-2xl font-bold mb-6">
+                                    Verificar
+                                    Disponibilidad</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label
+                                            class="block text-slate-500 dark:text-slate-400 text-xs font-bold uppercase mb-1">Tipo
+                                            de Vehículo</label>
+                                        <select
+                                            class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg p-3 text-slate-900 dark:text-slate-100">
+                                            <option>Sedán / Hatchback</option>
+                                            <option>SUV / Crossover</option>
+                                            <option>Camioneta Pickup</option>
+                                            <option>Lujo / Deportivo</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="block text-slate-500 dark:text-slate-400 text-xs font-bold uppercase mb-1">Fecha
+                                            de Servicio</label>
+                                        <input
+                                            class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg p-3 text-slate-900 dark:text-slate-100"
+                                            type="date" />
+                                    </div>
+                                    <button onclick="window.location.href='booking.html'"
+                                        class="w-full bg-primary text-white font-bold py-4 rounded-xl mt-4 shadow-md">Encontrar
+                                        Horarios Disponibles</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- Footer -->
+            <footer
+                class="bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 px-6 md:px-20 py-12">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+                    <div class="col-span-1 md:col-span-1">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="size-6 flex items-center justify-center bg-primary text-white rounded">
+                                <span class="material-symbols-outlined text-sm">waves</span>
+                            </div>
+                            <h2 class="text-xl font-bold dark:text-white tracking-tight">
+                                Premiun Wash RD</h2>
+                        </div>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6">El arte del cuidado del automóvil
+                            reimaginado. Traemos brillantez al frente de tu camino de entrada con nuestra unidad móvil
+                            de
+                            detallado de vanguardia.</p>
+                        <div class="flex gap-4">
+                            <div
+                                class="size-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-colors cursor-pointer">
+                                <span class="material-symbols-outlined text-[18px]">share</span>
+                            </div>
+                            <div
+                                class="size-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-colors cursor-pointer">
+                                <span class="material-symbols-outlined text-[18px]">public</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Servicios</h4>
+                        <ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+                            <li><a class="hover:text-primary transition-colors" href="services.html">Detallado
+                                    Exterior</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="services.html">Revitalización
+                                    Interior</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="services.html">Recubrimiento
+                                    Cerámico</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="services.html">Corrección de
+                                    Pintura</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Empresa</h4>
+                        <ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+                            <li><a class="hover:text-primary transition-colors" href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li><a class="hover:text-primary transition-colors" href="reviews.html">Nuestra Galería</a>
+                            </li>
+                            <li><a class="hover:text-primary transition-colors" href="reviews.html">Testimonios</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="about.html">Trabaja con
+                                    Nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Contacto</h4>
+                        <ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+                            <li class="flex items-start gap-2">
+                                <span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+                                Calle Principal #123, Sector Centro<br />La Romana, República Dominicana
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary text-[18px]">phone</span>
+                                (809) 555-1234
+                            </li>
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-sm">mail</span>
+                                hello@premiunwashrd.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-slate-400 text-xs">© 2024 Premiun Wash RD. Todos los
+                        derechos reservados.
+                    </p>
+                    <div class="flex gap-8 text-xs text-slate-400">
+                        <a class="hover:text-primary" href="#">Política de Privacidad</a>
+                        <a class="hover:text-primary" href="#">Términos de Servicio</a>
+                        <a class="hover:text-primary" href="#">Configuración de Cookies</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Fleet Plan Information Modal -->
+    <div id="fleet-modal"
+        class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/50 backdrop-blur-sm p-4 h-screen">
+        <div
+            class="bg-white dark:bg-slate-900 w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+            <div class="flex justify-between items-center p-6 border-b border-slate-100 dark:border-slate-800">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Plan de Flota Corporativa</h3>
+                <button onclick="document.getElementById('fleet-modal').classList.add('hidden')"
+                    class="text-slate-400 hover:text-red-500 transition-colors">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto">
+                <p class="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+                    Nuestro <strong class="text-primary">Plan de Flota Corporativa</strong> está diseñado
+                    específicamente para negocios, empresas y organizaciones que mantienen tres o más vehículos de
+                    servicio, camionetas para entregas o transporte ejecutivo.
+                </p>
+                <h4 class="font-bold text-slate-800 dark:text-slate-200 mt-6 mb-2">Beneficios del Plan:</h4>
+                <ul class="space-y-3 mb-6">
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        <span class="text-sm text-slate-600 dark:text-slate-300"><strong>Descuentos por
+                                Volumen:</strong> Reduce los costos operativos con precios exclusivos para múltiples
+                            vehículos.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary text-sm mt-0.5">calendar_month</span>
+                        <span class="text-sm text-slate-600 dark:text-slate-300"><strong>Mantenimiento
+                                Programado:</strong> Diseñamos calendarios adaptados a la actividad de tu empresa (ej.
+                            lavado cada lunes en la madrugada).</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary text-sm mt-0.5">workspace_premium</span>
+                        <span class="text-sm text-slate-600 dark:text-slate-300"><strong>Prioridad de Servicio:</strong>
+                            Atención rápida para tus vehículos, garantizando que tu imagen comercial siempre sea la
+                            mejor.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary text-sm mt-0.5">receipt_long</span>
+                        <span class="text-sm text-slate-600 dark:text-slate-300"><strong>Facturación
+                                Consolidada:</strong> Opciones de pago mensual centralizadas para facilitar la
+                            contabilidad y deducibles de impuestos.</span>
+                    </li>
+                </ul>
+                <p class="text-sm text-slate-500 dark:text-slate-400 border-l-4 border-primary/30 pl-3">Para obtener una
+                    cotización personalizada basada en el tamaño exacto de tu flota y tipo de vehículos, no dudes en
+                    contactarnos directamente.</p>
+            </div>
+            <div
+                class="p-6 border-t border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 flex justify-end gap-3">
+                <button onclick="document.getElementById('fleet-modal').classList.add('hidden')"
+                    class="px-5 py-2.5 rounded-lg text-slate-600 dark:text-slate-300 font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">Volver</button>
+                <button onclick="window.location.href='about.html'"
+                    class="px-5 py-2.5 rounded-lg bg-primary text-white font-bold hover:bg-primary/90 transition-all shadow-md">Contáctanos</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accessibility Widget -->
+    <div class="fixed bottom-6 right-6 z-[100] flex flex-col items-end gap-3">
+        <!-- Accessibility Menu -->
+        <div id="a11y-menu"
+            class="hidden bg-white dark:bg-slate-900 rounded-2xl shadow-2xl p-4 border border-slate-100 dark:border-slate-800 w-64 mb-2 origin-bottom-right transition-all">
+            <h3
+                class="text-sm font-bold text-slate-800 dark:text-white mb-3 flex items-center gap-2 border-b border-slate-100 dark:border-slate-800 pb-2">
+                <span class="material-symbols-outlined text-[18px]">accessibility_new</span> Accesibilidad
+            </h3>
+            <div class="space-y-3">
+                <label class="flex items-center justify-between cursor-pointer space-x-2">
+                    <span class="text-xs font-semibold text-slate-600 dark:text-slate-300">Alto Contraste</span>
+                    <input type="checkbox" id="toggle-high-contrast" onchange="toggleA11ySetting('highContrast')"
+                        class="form-checkbox h-4 w-4 text-primary rounded border-slate-300 focus:ring-primary">
+                </label>
+                <label class="flex items-center justify-between cursor-pointer space-x-2">
+                    <span class="text-xs font-semibold text-slate-600 dark:text-slate-300">Texto Grande</span>
+                    <input type="checkbox" id="toggle-large-text" onchange="toggleA11ySetting('largeText')"
+                        class="form-checkbox h-4 w-4 text-primary rounded border-slate-300 focus:ring-primary">
+                </label>
+                <label class="flex items-center justify-between cursor-pointer space-x-2">
+                    <span class="text-xs font-semibold text-slate-600 dark:text-slate-300">Fuente Legible</span>
+                    <input type="checkbox" id="toggle-dyslexic-font" onchange="toggleA11ySetting('dyslexicFont')"
+                        class="form-checkbox h-4 w-4 text-primary rounded border-slate-300 focus:ring-primary">
+                </label>
+            </div>
+        </div>
+        <!-- Toggle Button -->
+        <button onclick="toggleA11yMenu()"
+            class="size-14 bg-primary text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:-translate-y-1 hover:bg-primary/90 transition-all border-2 border-white/20">
+            <span class="material-symbols-outlined text-[28px]">accessible</span>
+        </button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Premiun Wash RD - Reserva tu Lavado</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="px-4 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+                <div
+                    class="layout-content-container flex flex-col max-w-[960px] flex-1 bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
+                    <!-- Header -->
+                    <!-- Navigation -->
+                    <header
+                        class="fixed top-0 left-0 w-full z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 shadow-sm px-6 md:px-20 py-4 bg-white/95 backdrop-blur-md dark:bg-slate-900/95 dark:border-slate-800">
+                        <a href="index.html"
+                            class="flex items-center gap-3 text-primary dark:text-slate-100 cursor-pointer">
+                            <div class="size-8 flex items-center justify-center bg-primary text-white rounded-lg">
+                                <span class="material-symbols-outlined text-xl">local_car_wash</span>
+                            </div>
+                            <h2 class="text-xl font-extrabold leading-tight tracking-tight">Premiun Wash RD</h2>
+                        </a>
+                        <div class="flex flex-1 justify-end gap-6 items-center">
+                            <nav class="hidden md:flex items-center gap-8">
+                                <a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors"
+                                    href="index.html">Inicio</a>
+                                <a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors"
+                                    href="services.html">Servicios</a>
+                                <a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors"
+                                    href="reviews.html">Reseñas</a>
+                                <a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors"
+                                    href="about.html">Sobre Nosotros</a>
+                            </nav>
+
+                            <button onclick="window.location.href='booking.html'"
+                                class="relative hidden md:flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">
+                                <span>Reservar Ahora</span>
+                                <span
+                                    class="cart-counter hidden absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold h-5 min-w-[20px] px-1.5 flex items-center justify-center rounded-full pointer-events-none border-2 border-white shadow-sm">0</span>
+                            </button>
+                        </div>
+                    </header>
+                    <main class="flex-1">
+                        <!-- Main Content Area -->
+                        <div class="px-6 md:px-10 py-12 lg:py-20 flex flex-col gap-8">
+                            <!-- Booking Form Layout -->
+                            <section class="max-w-[1100px] w-full mx-auto relative z-10">
+                                <form id="booking-form"
+                                    class="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-xl overflow-hidden"
+                                    onsubmit="submitBooking(event)">
+                                    <div class="flex flex-col lg:flex-row w-full h-full">
+                                        <!-- Left Column: Cart Items -->
+                                        <div
+                                            class="w-full lg:w-5/12 p-8 md:p-12 bg-slate-50 dark:bg-slate-800/20 border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-slate-800 flex flex-col h-full">
+                                            <h3
+                                                class="text-2xl font-black mb-8 text-slate-900 dark:text-white flex items-center gap-3">
+                                                <span
+                                                    class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-xl">shopping_bag</span>
+                                                Resumen de Reserva
+                                            </h3>
+
+                                            <!-- Empty State -->
+                                            <div id="cart-empty-state"
+                                                class="flex-1 flex flex-col items-center justify-center py-12 text-center hidden">
+                                                <div
+                                                    class="size-20 rounded-full bg-white dark:bg-slate-800 shadow-sm flex items-center justify-center mb-6 text-slate-300">
+                                                    <span
+                                                        class="material-symbols-outlined text-4xl">remove_shopping_cart</span>
+                                                </div>
+                                                <p class="text-slate-600 dark:text-slate-400 mb-6 font-medium">Tu
+                                                    carrito está vacío.</p>
+                                                <button type="button" onclick="window.location.href='services.html'"
+                                                    class="px-6 py-3 bg-primary text-white font-bold rounded-xl shadow-md hover:bg-primary/90 transition-all">Explorar
+                                                    Servicios</button>
+                                            </div>
+
+                                            <div class="flex-1 flex flex-col">
+                                                <!-- Populated Cart Container -->
+                                                <div id="cart-items-container"
+                                                    class="space-y-4 mb-8 overflow-y-auto pr-2 custom-scrollbar">
+                                                    <!-- Items injected by script.js -->
+                                                </div>
+
+                                                <div class="mt-auto">
+                                                    <!-- Add more button -->
+                                                    <button type="button" onclick="window.location.href='services.html'"
+                                                        class="w-full h-12 rounded-xl flex items-center justify-center gap-2 border-2 text-slate-600 dark:text-slate-300 border-dashed border-slate-300 dark:border-slate-700 hover:border-primary hover:text-primary transition-colors bg-white dark:bg-slate-900 font-bold mb-6 hover:bg-slate-50">
+                                                        <span class="material-symbols-outlined text-sm">add</span>
+                                                        Agregar otro servicio
+                                                    </button>
+
+                                                    <!-- Summary Card -->
+                                                    <div id="cart-summary-card"
+                                                        class="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 hidden">
+                                                        <div class="flex justify-between items-end mb-2">
+                                                            <span class="text-slate-500 font-bold">Total a Pagar</span>
+                                                            <span id="cart-total-price"
+                                                                class="text-4xl font-black text-slate-900 dark:text-white tracking-tight">$0.00</span>
+                                                        </div>
+                                                        <p class="text-xs text-right text-slate-400 mb-6 font-medium">
+                                                            Precios estimados. Pago en sucursal.</p>
+                                                        <button type="submit"
+                                                            class="w-full bg-primary hover:bg-primary/90 text-white font-black py-4 rounded-xl shadow-lg shadow-primary/20 transition-transform hover:-translate-y-1 flex justify-center items-center gap-3">
+                                                            <span class="material-symbols-outlined">check_circle</span>
+                                                            Confirmar Reserva
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Right Column: Details & Summary -->
+                                        <div class="w-full lg:w-7/12 p-8 md:p-12 bg-white dark:bg-background-dark">
+                                            <h3
+                                                class="text-2xl font-black mb-8 text-slate-900 dark:text-white flex items-center gap-3">
+                                                <span
+                                                    class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-xl">contact_mail</span>
+                                                Detalles del Servicio
+                                            </h3>
+
+                                            <div class="space-y-8">
+                                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                                    <div class="space-y-2">
+                                                        <label
+                                                            class="text-sm font-black text-slate-700 dark:text-slate-300 uppercase tracking-widest">Fecha</label>
+                                                        <input required
+                                                            class="w-full rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:border-primary focus:ring-2 focus:ring-primary/20 h-14 px-4 shadow-sm font-medium transition-all"
+                                                            type="date" />
+                                                    </div>
+                                                    <div class="space-y-2">
+                                                        <label
+                                                            class="text-sm font-black text-slate-700 dark:text-slate-300 uppercase tracking-widest">Hora</label>
+                                                        <select
+                                                            class="w-full rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:border-primary focus:ring-2 focus:ring-primary/20 h-14 px-4 shadow-sm font-medium transition-all appearance-none cursor-pointer">
+                                                            <option>09:00 AM</option>
+                                                            <option>11:00 AM</option>
+                                                            <option>01:00 PM</option>
+                                                            <option>03:00 PM</option>
+                                                            <option>05:00 PM</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="space-y-2">
+                                                    <label
+                                                        class="text-sm font-black text-slate-700 dark:text-slate-300 uppercase tracking-widest">Vehículo
+                                                        (Marca y Modelo)</label>
+                                                    <div class="relative">
+                                                        <div
+                                                            class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+                                                            <span
+                                                                class="material-symbols-outlined">directions_car</span>
+                                                        </div>
+                                                        <input required
+                                                            class="w-full rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:border-primary focus:ring-2 focus:ring-primary/20 h-14 pl-12 pr-4 shadow-sm font-medium transition-all"
+                                                            placeholder="Ej. BMW M4 2022" type="text" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                                    <div class="space-y-2">
+                                                        <label
+                                                            class="text-sm font-black text-slate-700 dark:text-slate-300 uppercase tracking-widest">Nombre
+                                                            Completo</label>
+                                                        <input required
+                                                            class="w-full rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:border-primary focus:ring-2 focus:ring-primary/20 h-14 px-4 shadow-sm font-medium transition-all"
+                                                            placeholder="John Doe" type="text" />
+                                                    </div>
+                                                    <div class="space-y-2">
+                                                        <label
+                                                            class="text-sm font-black text-slate-700 dark:text-slate-300 uppercase tracking-widest">Teléfono</label>
+                                                        <input required
+                                                            class="w-full rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:border-primary focus:ring-2 focus:ring-primary/20 h-14 px-4 shadow-sm font-medium transition-all"
+                                                            placeholder="+1 (809) 000-0000" type="tel" />
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="space-y-3 pt-2 border-t border-slate-100 dark:border-slate-800">
+                                                    <label
+                                                        class="text-sm font-black text-slate-700 dark:text-slate-300 uppercase tracking-widest block mb-4">Modalidad
+                                                        de Servicio</label>
+                                                    <div class="grid grid-cols-2 gap-4">
+                                                        <div class="relative">
+                                                            <input checked="" class="peer sr-only" id="loc-shop"
+                                                                name="location" type="radio" value="shop" />
+                                                            <label
+                                                                class="flex flex-col items-center justify-center rounded-2xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-6 text-sm font-bold text-slate-500 peer-checked:border-primary peer-checked:bg-primary/5 peer-checked:text-primary hover:border-slate-300 transition-all cursor-pointer shadow-sm group"
+                                                                for="loc-shop">
+                                                                <span
+                                                                    class="material-symbols-outlined text-3xl mb-2 group-hover:scale-110 transition-transform">storefront</span>
+                                                                En Taller
+                                                            </label>
+                                                        </div>
+                                                        <div class="relative">
+                                                            <input class="peer sr-only" id="loc-mobile" name="location"
+                                                                type="radio" value="mobile" />
+                                                            <label
+                                                                class="flex flex-col items-center justify-center rounded-2xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-6 text-sm font-bold text-slate-500 peer-checked:border-primary peer-checked:bg-primary/5 peer-checked:text-primary hover:border-slate-300 transition-all cursor-pointer shadow-sm group"
+                                                                for="loc-mobile">
+                                                                <span
+                                                                    class="material-symbols-outlined text-3xl mb-2 group-hover:scale-110 transition-transform">local_shipping</span>
+                                                                Servicio Móvil
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </section>
+
+                            <!-- Map Preview -->
+                            <section class="max-w-[1100px] w-full mx-auto relative z-0 -mt-10">
+                                <div
+                                    class="w-full rounded-2xl overflow-hidden h-64 relative border border-slate-200 dark:border-slate-800 shadow-inner">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.814981446755!2d-68.97444742385153!3d18.44684987140882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea81da930bc6335%3A0xc6657c91a75acff6!2sLa%20Romana%2C%20Dominican%20Republic!5e0!3m2!1sen!2sdo!4v1709425000000!5m2!1sen!2sdo"
+                                        width="100%" height="100%" style="border:0; filter: grayscale(1) opacity(0.8);"
+                                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                        class="w-full h-full object-cover">
+                                    </iframe>
+                                    <div
+                                        class="absolute inset-0 pointer-events-none bg-gradient-to-t from-background-light dark:from-background-dark/80 via-transparent to-transparent">
+                                    </div>
+                                    <div
+                                        class="absolute pointer-events-none bottom-6 left-8 flex items-center gap-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md px-6 py-3 rounded-full shadow-lg border border-white/20">
+                                        <span class="material-symbols-outlined text-primary">location_on</span>
+                                        <span class="text-sm font-bold text-slate-800 dark:text-slate-200">Calle
+                                            Principal #123, La Romana, Rep. Dom.</span>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Footer Info -->
+                            <div
+                                class="max-w-[1100px] w-full mx-auto bg-slate-50 dark:bg-slate-800/50 p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-800">
+                                <div class="flex items-center gap-6">
+                                    <span class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-primary">verified_user</span>
+                                        Reserva Encriptada & Segura
+                                    </span>
+                                    <span class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-primary">event_available</span>
+                                        Reprogramación Flexible
+                                    </span>
+                                </div>
+                                <div class="mt-12 text-center text-slate-400 text-xs">
+                                    <p>© 2024 Premiun Wash RD Especialistas</p>
+                                </div>
+                            </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Accessibility Widget -->
+        <div class="fixed bottom-6 right-6 z-[100] flex flex-col items-end gap-3">
+            <!-- Accessibility Menu -->
+            <div id="a11y-menu"
+                class="hidden bg-white dark:bg-slate-900 rounded-2xl shadow-2xl p-4 border border-slate-100 dark:border-slate-800 w-64 mb-2 origin-bottom-right transition-all">
+                <h3
+                    class="text-sm font-bold text-slate-800 dark:text-white mb-3 flex items-center gap-2 border-b border-slate-100 dark:border-slate-800 pb-2">
+                    <span class="material-symbols-outlined text-[18px]">accessibility_new</span> Accesibilidad
+                </h3>
+                <div class="space-y-3">
+                    <label class="flex items-center justify-between cursor-pointer space-x-2">
+                        <span class="text-xs font-semibold text-slate-600 dark:text-slate-300">Alto Contraste</span>
+                        <input type="checkbox" id="toggle-high-contrast" onchange="toggleA11ySetting('highContrast')"
+                            class="form-checkbox h-4 w-4 text-primary rounded border-slate-300 focus:ring-primary">
+                    </label>
+                    <label class="flex items-center justify-between cursor-pointer space-x-2">
+                        <span class="text-xs font-semibold text-slate-600 dark:text-slate-300">Texto Grande</span>
+                        <input type="checkbox" id="toggle-large-text" onchange="toggleA11ySetting('largeText')"
+                            class="form-checkbox h-4 w-4 text-primary rounded border-slate-300 focus:ring-primary">
+                    </label>
+                    <label class="flex items-center justify-between cursor-pointer space-x-2">
+                        <span class="text-xs font-semibold text-slate-600 dark:text-slate-300">Fuente Legible</span>
+                        <input type="checkbox" id="toggle-dyslexic-font" onchange="toggleA11ySetting('dyslexicFont')"
+                            class="form-checkbox h-4 w-4 text-primary rounded border-slate-300 focus:ring-primary">
+                    </label>
+                </div>
+            </div>
+            <!-- Toggle Button -->
+            <button onclick="toggleA11yMenu()"
+                class="size-14 bg-primary text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:-translate-y-1 hover:bg-primary/90 transition-all border-2 border-white/20">
+                <span class="material-symbols-outlined text-[28px]">accessible</span>
+            </button>
+        </div>
+</body>
+
+</html>
+</div>
+</div>
+</body>
+
+</html>

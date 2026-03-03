@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Premiun Wash RD | Cuidado Premium de Vehículos</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Header Navigation -->
+            <!-- Header Navigation -->
+            <header
+                class="fixed top-0 left-0 w-full z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 shadow-sm px-6 md:px-20 py-4 bg-white/95 backdrop-blur-md">
+                <a href="index.html" class="flex items-center gap-3 text-primary cursor-pointer">
+                    <div class="size-8">
+                        <span class="material-symbols-outlined text-4xl">local_car_wash</span>
+                    </div>
+                    <h2 class="text-primary text-xl font-extrabold leading-tight tracking-tight">Premiun Wash RD</h2>
+                </a>
+                <div class="flex flex-1 justify-end gap-6 items-center">
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-slate-700 hover:text-primary text-sm font-semibold transition-colors border-b-2 border-primary"
+                            href="index.html">Inicio</a>
+                        <a class="text-slate-700 hover:text-primary text-sm font-semibold transition-colors"
+                            href="services.html">Servicios</a>
+                        <a class="text-slate-700 hover:text-primary text-sm font-semibold transition-colors"
+                            href="reviews.html">Reseñas</a>
+                        <a class="text-slate-700 hover:text-primary text-sm font-semibold transition-colors"
+                            href="about.html">Sobre Nosotros</a>
+                    </nav>
+
+                    <button onclick="window.location.href='booking.html'"
+                        class="relative hidden md:flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">
+                        <span>Reservar Ahora</span>
+                        <span
+                            class="cart-counter hidden absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold h-5 min-w-[20px] px-1.5 flex items-center justify-center rounded-full pointer-events-none border-2 border-white shadow-sm">0</span>
+                    </button>
+                </div>
+            </header>
+            <main class="flex flex-col">
+                <!-- Hero Section -->
+                <div class="px-6 md:px-20 py-12 md:py-24">
+                    <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+                        <div class="flex flex-col gap-8 flex-1">
+                            <div class="flex flex-col gap-4">
+                                <span class="text-primary font-bold tracking-widest uppercase text-sm">Servicio de
+                                    Detallado Premium</span>
+                                <h1 class="text-slate-900 text-5xl md:text-7xl font-black leading-tight tracking-tight">
+                                    Cuidado de Precisión para tu <span class="text-primary">Obra Maestra</span>
+                                </h1>
+                                <p class="text-slate-600 text-lg md:text-xl max-w-xl leading-relaxed">
+                                    Experimenta la máxima estética automotriz con nuestros servicios de limpieza de alta
+                                    precisión y ecológicos diseñados para vehículos de lujo.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-4">
+                                <button onclick="window.location.href='booking.html'"
+                                    class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 bg-primary text-white text-lg font-bold shadow-xl shadow-primary/30 hover:scale-105 transition-transform">
+                                    Reservar Ahora
+                                </button>
+                                <button onclick="window.location.href='services.html'"
+                                    class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 bg-white border-2 border-primary/10 text-primary text-lg font-bold hover:bg-slate-50 transition-colors">
+                                    Ver Paquetes
+                                </button>
+                            </div>
+                            <div class="flex items-center gap-4 pt-4">
+                                <div class="flex -space-x-3">
+                                    <div class="size-10 rounded-full border-2 border-white bg-slate-200"
+                                        data-alt="Satisfied customer avatar one"></div>
+                                    <div class="size-10 rounded-full border-2 border-white bg-slate-300"
+                                        data-alt="Satisfied customer avatar two"></div>
+                                    <div class="size-10 rounded-full border-2 border-white bg-slate-400"
+                                        data-alt="Satisfied customer avatar three"></div>
+                                </div>
+                                <div class="text-sm font-medium text-slate-500">
+                                    <span class="text-slate-900 font-bold">+500</span> Clientes Felices este mes
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1 w-full relative">
+                            <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl bg-primary/5">
+                                <div class="w-full h-full bg-cover bg-center"
+                                    data-alt="Modern silver sports car being washed meticulously"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIIODlx96-cPb7ajCQX3vUny2LfxGP-Q6-b0WKl6kMCuC-3F-AR-XYrLTVo2nI4KVF_tqLe65l0H3e96XKA1MSy92HCvkTcSssth0nz7WrN0W0VlTxo50MAQC6whJQjzsa8c2-LM6U_oNhvPzsTSxLwrjvVQU_wAaQSGXZd2QV0l00_2kXY0PYjl9shR_wLffvUKQVKa6dtIVUKNPC_VESqxzTD-yRROsPFWi0uBhSts2Bb6NaSYTfG4h4DXMEtlB-xzVV2yBhZ68w");'>
+                                </div>
+                            </div>
+                            <!-- Floating Stat Card -->
+                            <div
+                                class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 hidden lg:block">
+                                <div class="flex items-center gap-4">
+                                    <div class="bg-primary/10 p-3 rounded-xl">
+                                        <span class="material-symbols-outlined text-primary text-3xl">verified</span>
+                                    </div>
+                                    <div>
+                                        <div class="text-2xl font-black text-slate-900 leading-none">100%</div>
+                                        <div class="text-sm font-medium text-slate-500 uppercase tracking-tighter">
+                                            Ecológico</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Services Section -->
+                <section class="px-6 md:px-20 py-20 bg-slate-50" id="services">
+                    <div class="max-w-7xl mx-auto">
+                        <div class="flex flex-col gap-4 text-center mb-16">
+                            <h2 class="text-primary font-bold tracking-widest uppercase text-sm">Selecciona tu
+                                Experiencia</h2>
+                            <h3 class="text-slate-900 text-4xl font-black leading-tight">Paquetes de Servicio
+                                Meticulosos</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <!-- Basic Package -->
+                            <div
+                                class="flex flex-col gap-6 rounded-2xl border border-slate-200 bg-white p-8 hover:shadow-2xl hover:-translate-y-1 transition-all">
+                                <div class="flex flex-col gap-2">
+                                    <div
+                                        class="size-12 rounded-xl bg-slate-100 flex items-center justify-center text-primary">
+                                        <span class="material-symbols-outlined">water_drop</span>
+                                    </div>
+                                    <h4 class="text-slate-900 text-xl font-bold mt-2">Brillo Esencial</h4>
+                                    <div class="flex items-baseline gap-1">
+                                        <span class="text-slate-900 text-4xl font-black">$25</span>
+                                        <span class="text-slate-500 text-sm font-bold">/sesión</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="flex items-center gap-3 text-slate-600 font-medium">
+                                        <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                        Lavado Exterior con Espuma
+                                    </div>
+                                    <div class="flex items-center gap-3 text-slate-600 font-medium">
+                                        <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                        Cepillado de Ruedas y Llantas
+                                    </div>
+                                    <div class="flex items-center gap-3 text-slate-600 font-medium">
+                                        <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                        Secado a Mano sin Manchas
+                                    </div>
+                                </div>
+                                <button onclick="addToCart('Brillo Esencial', 25, '20 mins')"
+                                    class="w-full h-12 bg-slate-100 text-slate-900 font-bold rounded-lg hover:bg-primary hover:text-white transition-colors">Seleccionar
+                                    Básico</button>
+                            </div>
+                            <!-- Premium Package (Highlight) -->
+                            <div
+                                class="flex flex-col gap-6 rounded-2xl border-2 border-primary bg-white p-8 shadow-2xl shadow-primary/10 relative scale-105 z-10">
+                                <div
+                                    class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-black px-4 py-1 rounded-full uppercase tracking-widest">
+                                    Más Popular</div>
+                                <div class="flex flex-col gap-2">
+                                    <div
+                                        class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                                        <span class="material-symbols-outlined">stars</span>
+                                    </div>
+                                    <h4 class="text-slate-900 text-xl font-bold mt-2">Ejecutivo Plus</h4>
+                                    <div class="flex items-baseline gap-1">
+                                        <span class="text-slate-900 text-4xl font-black">$45</span>
+                                        <span class="text-slate-500 text-sm font-bold">/sesión</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="flex items-center gap-3 text-slate-600 font-medium font-bold">
+                                        <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                        Incluye Cuidado Esencial
+                                    </div>
+                                    <div class="flex items-center gap-3 text-slate-600 font-medium">
+                                        <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                        Aspirado Interior Completo
+                                    </div>
+                                    <div class="flex items-center gap-3 text-slate-600 font-medium">
+                                        <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                        Rejuvenecimiento del Tablero
+                                    </div>
+                                    <div class="flex items-center gap-3 text-slate-600 font-medium">
+                                        <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                        Infusión de Fragancia
+                                    </div>
+                                </div>
+                                <button onclick="addToCart('Ejecutivo Plus', 45, '45 mins')"
+                                    class="w-full h-12 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20">Seleccionar
+                                    Premium</button>
+                            </div>
+                            <!-- Deluxe Package -->
+                            <div
+                                class="flex flex-col gap-6 rounded-2xl border border-slate-200 bg-white p-8 hover:shadow-2xl hover:-translate-y-1 transition-all">
+                                <div class="flex flex-col gap-2">
+                                    <div
+                                        class="size-12 rounded-xl bg-slate-100 flex items-center justify-center text-primary">
+                                        <span class="material-symbols-outlined">workspace_premium</span>
+                                    </div>
+                                    <h4 class="text-slate-900 text-xl font-bold mt-2">Exhibición Deluxe</h4>
+                                    <div class="flex items-baseline gap-1">
+                                        <span class="text-slate-900 text-4xl font-black">$75</span>
+                                        <span class="text-slate-500 text-sm font-bold">/sesión</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="flex items-center gap-3 text-slate-600 font-medium font-bold">
+                                        <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                        Incluye Ejecutivo Plus
+                                    </div>
+                                    <div class="flex items-center gap-3 text-slate-600 font-medium">
+                                        <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                        Encerado Cerámico
+                                    </div>
+                                    <div class="flex items-center gap-3 text-slate-600 font-medium">
+                                        <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                        Acondicionamiento de Cuero
+                                    </div>
+                                    <div class="flex items-center gap-3 text-slate-600 font-medium">
+                                        <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                        Detallado de Motor
+                                    </div>
+                                </div>
+                                <button onclick="addToCart('Exhibición Deluxe', 75, '2 hrs')"
+                                    class="w-full h-12 bg-slate-100 text-slate-900 font-bold rounded-lg hover:bg-primary hover:text-white transition-colors">Seleccionar
+                                    Deluxe</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Booking Section -->
+                <section class="px-6 md:px-20 py-20" id="booking">
+                    <div
+                        class="max-w-4xl mx-auto bg-white rounded-3xl border border-slate-100 shadow-2xl overflow-hidden flex flex-col md:flex-row">
+                        <div class="bg-primary p-12 text-white flex flex-col justify-center gap-6 md:w-2/5">
+                            <h3 class="text-3xl font-black leading-tight">Nuestra Ubicación</h3>
+                            <p class="text-white/80 font-medium">Encuéntranos fácilmente. Estamos ubicados en el corazón
+                                de La Romana para brindarte el mejor servicio.</p>
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-4">
+                                    <span class="material-symbols-outlined text-white/50">calendar_month</span>
+                                    <span class="font-bold">Lun - Sáb: 8AM - 8PM</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="material-symbols-outlined text-white/50">location_on</span>
+                                    <span class="font-bold">Sede Principal, La Romana, Rep. Dom.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8 md:p-12 md:w-3/5 bg-white">
+                            <!-- Embedded Google Map -->
+                            <div
+                                class="w-full h-[400px] rounded-2xl overflow-hidden border border-slate-200 shadow-inner">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.814981446755!2d-68.97444742385153!3d18.44684987140882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea81da930bc6335%3A0xc6657c91a75acff6!2sLa%20Romana%2C%20Dominican%20Republic!5e0!3m2!1sen!2sdo!4v1709425000000!5m2!1sen!2sdo"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Why Choose Us Section -->
+                <section class="px-6 md:px-20 py-20 bg-white" id="features">
+                    <div class="max-w-7xl mx-auto">
+                        <div class="text-center mb-16">
+                            <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-2">Beneficios</h2>
+                            <h3 class="text-3xl md:text-5xl font-black text-slate-900">¿Por qué elegir AquaGlow?</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div
+                                class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:-translate-y-2 transition-transform">
+                                <span
+                                    class="material-symbols-outlined text-4xl text-primary bg-primary/10 p-4 rounded-full mb-6 inline-block">diamond</span>
+                                <h4 class="text-xl font-bold text-slate-900 mb-4">Calidad Inigualable</h4>
+                                <p class="text-slate-600 leading-relaxed">Solo utilizamos ceras de grado automotriz y
+                                    toallas de microfibra de la más alta calidad para asegurar un acabado espejo sin
+                                    rayones.</p>
+                            </div>
+                            <div
+                                class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:-translate-y-2 transition-transform">
+                                <span
+                                    class="material-symbols-outlined text-4xl text-primary bg-primary/10 p-4 rounded-full mb-6 inline-block">schedule</span>
+                                <h4 class="text-xl font-bold text-slate-900 mb-4">Tu Tiempo Vale Oro</h4>
+                                <p class="text-slate-600 leading-relaxed">Reserva fácilmente en línea o elige nuestro
+                                    servicio móvil. Nosotros nos adaptamos a tu horario para que no pierdas ni un
+                                    minuto.</p>
+                            </div>
+                            <div
+                                class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:-translate-y-2 transition-transform">
+                                <span
+                                    class="material-symbols-outlined text-4xl text-primary bg-primary/10 p-4 rounded-full mb-6 inline-block">local_shipping</span>
+                                <h4 class="text-xl font-bold text-slate-900 mb-4">Servicio Móvil Disponible</h4>
+                                <p class="text-slate-600 leading-relaxed">No tienes que venir al taller en La Romana;
+                                    nosotros llevamos nuestro equipo directamente a la puerta de tu casa u oficina.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FAQ Section -->
+                <section class="max-w-[1000px] mx-auto px-6 md:px-20 py-20 bg-slate-50 rounded-3xl my-10" id="faq">
+                    <div class="text-center mb-16">
+                        <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-2">FAQ</h2>
+                        <h3 class="text-3xl md:text-5xl font-black text-slate-900">Preguntas Frecuentes</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                            <summary
+                                class="flex justify-between items-center font-bold font-lg cursor-pointer list-none p-6 text-slate-900">
+                                ¿Tengo que pagar por adelantado para reservar?
+                                <span
+                                    class="transition group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+                            </summary>
+                            <div class="text-slate-600 mt-3 group-open:animate-fadeIn px-6 pb-6">
+                                <p>No, el pago se realiza directamente en nuestra sucursal una vez que el servicio
+                                    profesional ha sido finalizado a tu gusto. La reserva en línea es solo para agendar
+                                    tu cita y generar un estimado.</p>
+                            </div>
+                        </details>
+                        <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                            <summary
+                                class="flex justify-between items-center font-bold font-lg cursor-pointer list-none p-6 text-slate-900">
+                                ¿Cuentan con servicio a domicilio en toda La Romana?
+                                <span
+                                    class="transition group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+                            </summary>
+                            <div class="text-slate-600 mt-3 group-open:animate-fadeIn px-6 pb-6">
+                                <p>Sí, ofrecemos una modalidad de Servicio Móvil para toda el área metropolitana de La
+                                    Romana y zonas aledañas. Nosotros llevamos las herramientas directamente a ti.</p>
+                            </div>
+                        </details>
+                        <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                            <summary
+                                class="flex justify-between items-center font-bold font-lg cursor-pointer list-none p-6 text-slate-900">
+                                ¿Cuánto dura aproximadamente un paquete Completo?
+                                <span
+                                    class="transition group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+                            </summary>
+                            <div class="text-slate-600 mt-3 group-open:animate-fadeIn px-6 pb-6">
+                                <p>Dependiendo del tamaño y la condición de tu vehículo, un detallado completo exterior
+                                    e interior puede tomar entre 3 a 5 horas, garantizando que cada rincón quede como
+                                    nuevo.</p>
+                            </div>
+                        </details>
+                        <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                            <summary
+                                class="flex justify-between items-center font-bold font-lg cursor-pointer list-none p-6 text-slate-900">
+                                ¿Es mi información segura al reservar en línea?
+                                <span
+                                    class="transition group-open:rotate-180 material-symbols-outlined text-primary">expand_more</span>
+                            </summary>
+                            <div
+                                class="faq-answer max-h-0 overflow-hidden text-slate-600 text-[15px] leading-relaxed transition-all duration-300 px-6 bg-slate-50 border-t border-slate-100">
+                                <p>Totalmente. Toda la información enviada mediante el formulario de reserva se maneja
+                                    con la mayor
+                                    privacidad. En Premiun Wash RD la protección de tu información personal es tan alta
+                                    como la
+                                    calidad de nuestros servicios.</p>
+                            </div>
+                        </details>
+                    </div>
+                </section>
+                <!-- Testimonials Section -->
+                <section class="px-6 md:px-20 py-20 bg-slate-900 text-white overflow-hidden relative" id="reviews">
+                    <div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 blur-[120px] rounded-full -mr-48 -mt-48">
+                    </div>
+                    <div class="max-w-7xl mx-auto relative z-10">
+                        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                            <div class="space-y-4">
+                                <h2 class="text-primary font-bold tracking-widest uppercase text-sm">Testimonios</h2>
+                                <h3 class="text-4xl font-black">Confiado por Entusiastas de los Autos</h3>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="text-right">
+                                    <div class="flex text-yellow-400">
+                                        <span class="material-symbols-outlined fill-1">star</span>
+                                        <span class="material-symbols-outlined fill-1">star</span>
+                                        <span class="material-symbols-outlined fill-1">star</span>
+                                        <span class="material-symbols-outlined fill-1">star</span>
+                                        <span class="material-symbols-outlined fill-1">star</span>
+                                    </div>
+                                    <p class="text-slate-400 text-sm font-bold mt-1">4.9/5 Basado en más de 2,000
+                                        Reseñas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="bg-white/5 backdrop-blur-lg p-8 rounded-3xl border border-white/10 flex flex-col gap-6 cursor-pointer hover:bg-white/10 transition-colors"
+                                onclick="window.location.href='reviews.html'">
+                                <div class="flex text-yellow-400 text-xs">
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                </div>
+                                <p class="text-slate-300 italic leading-relaxed text-lg">"El nivel de detalle es
+                                    asombroso. No solo lavaron mi auto; restauraron su brillo de exhibición. Simplemente
+                                    el mejor de la ciudad."</p>
+                                <div class="flex items-center gap-4 mt-auto">
+                                    <div class="size-12 rounded-full bg-slate-800" data-alt="Customer James portrait">
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold">James Wilson</h5>
+                                        <p class="text-slate-500 text-xs">Propietario de Porsche 911</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white/5 backdrop-blur-lg p-8 rounded-3xl border border-white/10 flex flex-col gap-6 cursor-pointer hover:bg-white/10 transition-colors"
+                                onclick="window.location.href='reviews.html'">
+                                <div class="flex text-yellow-400 text-xs">
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                </div>
+                                <p class="text-slate-300 italic leading-relaxed text-lg">"Rápido, confiable y los
+                                    productos ecológicos que usan son de primer nivel. Mi Tesla luce increíble cada
+                                    vez."</p>
+                                <div class="flex items-center gap-4 mt-auto">
+                                    <div class="size-12 rounded-full bg-slate-800" data-alt="Customer Sarah portrait">
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold">Sarah Jenkins</h5>
+                                        <p class="text-slate-500 text-xs">Propietario de Tesla Model S</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white/5 backdrop-blur-lg p-8 rounded-3xl border border-white/10 flex flex-col gap-6 cursor-pointer hover:bg-white/10 transition-colors"
+                                onclick="window.location.href='reviews.html'">
+                                <div class="flex text-yellow-400 text-xs">
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                    <span class="material-symbols-outlined text-sm">star</span>
+                                </div>
+                                <p class="text-slate-300 italic leading-relaxed text-lg">"El paquete Deluxe vale cada
+                                    centavo. La limpieza del compartimento del motor fue particularmente impresionante.
+                                    Altamente recomendado."</p>
+                                <div class="flex items-center gap-4 mt-auto">
+                                    <div class="size-12 rounded-full bg-slate-800" data-alt="Customer Michael portrait">
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold">Michael Chen</h5>
+                                        <p class="text-slate-500 text-xs">Propietario de Mercedes G-Wagon</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- Footer -->
+            <footer class="bg-background-light border-t border-slate-200 px-6 md:px-20 py-12">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+                    <div class="col-span-1 md:col-span-2 flex flex-col gap-6">
+                        <div class="flex items-center gap-3 text-primary mb-6">
+                            <div class="size-8 flex items-center justify-center bg-primary text-white rounded-lg">
+                                <span class="material-symbols-outlined text-xl">local_car_wash</span>
+                            </div>
+                            <h2 class="text-xl font-black">Premiun Wash RD</h2>
+                        </div>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-8 max-w-sm">Elevando los estándares de
+                            cuidado automotriz a través de la excelencia profesional y la pasión por el detalle.</p>
+                        <div class="flex gap-4">
+                            <div
+                                class="size-10 rounded-full bg-slate-200 flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                                <span class="material-symbols-outlined">social_leaderboard</span>
+                            </div>
+                            <div
+                                class="size-10 rounded-full bg-slate-200 flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                                <span class="material-symbols-outlined">photo_camera</span>
+                            </div>
+                            <div
+                                class="size-10 rounded-full bg-slate-200 flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-white transition-colors">
+                                <span class="material-symbols-outlined">brand_family</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-black text-slate-900">Servicios</h4>
+                        <ul class="space-y-2 text-slate-500 font-medium">
+                            <li onclick="window.location.href='services.html'"
+                                class="hover:text-primary cursor-pointer">Lavado Exterior</li>
+                            <li onclick="window.location.href='services.html'"
+                                class="hover:text-primary cursor-pointer">Detallado Interior</li>
+                            <li onclick="window.location.href='services.html'"
+                                class="hover:text-primary cursor-pointer">Cubrimiento Cerámico</li>
+                            <li onclick="window.location.href='services.html'"
+                                class="hover:text-primary cursor-pointer">Servicios para Flotas</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-black text-slate-900">Contacto</h4>
+                        <ul class="space-y-2 text-slate-500 font-medium">
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-sm">mail</span> hello@aquaglow.com</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-sm">call</span> +1 (809) 555-1234</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-sm">mail</span> hello@premiunwashrd.com</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-sm">location_on</span> La Romana, República
+                                Dominicana
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Copyright -->
+                <div
+                    class="mt-12 pt-8 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between text-slate-500 text-sm">
+                    <p>© 2024 Premiun Wash RD Car Detailing. Todos los derechos reservados.</p>
+                    <div class="flex gap-6 mt-4 md:mt-0 font-medium">
+                        <a class="hover:text-primary transition-colors" href="#">Privacidad</a>
+                        <a class="hover:text-primary transition-colors" href="#">Términos</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- Accessibility Widget -->
+    <div class="fixed bottom-6 right-6 z-[100] flex flex-col items-end gap-3">
+        <!-- Accessibility Menu -->
+        <div id="a11y-menu"
+            class="hidden bg-white dark:bg-slate-900 rounded-2xl shadow-2xl p-4 border border-slate-100 dark:border-slate-800 w-64 mb-2 origin-bottom-right transition-all">
+            <h3
+                class="text-sm font-bold text-slate-800 dark:text-white mb-3 flex items-center gap-2 border-b border-slate-100 dark:border-slate-800 pb-2">
+                <span class="material-symbols-outlined text-[18px]">accessibility_new</span> Accesibilidad
+            </h3>
+            <div class="space-y-3">
+                <label class="flex items-center justify-between cursor-pointer space-x-2">
+                    <span class="text-xs font-semibold text-slate-600 dark:text-slate-300">Alto Contraste</span>
+                    <input type="checkbox" id="toggle-high-contrast" onchange="toggleA11ySetting('highContrast')"
+                        class="form-checkbox h-4 w-4 text-primary rounded border-slate-300 focus:ring-primary">
+                </label>
+                <label class="flex items-center justify-between cursor-pointer space-x-2">
+                    <span class="text-xs font-semibold text-slate-600 dark:text-slate-300">Texto Grande</span>
+                    <input type="checkbox" id="toggle-large-text" onchange="toggleA11ySetting('largeText')"
+                        class="form-checkbox h-4 w-4 text-primary rounded border-slate-300 focus:ring-primary">
+                </label>
+                <label class="flex items-center justify-between cursor-pointer space-x-2">
+                    <span class="text-xs font-semibold text-slate-600 dark:text-slate-300">Fuente Legible</span>
+                    <input type="checkbox" id="toggle-dyslexic-font" onchange="toggleA11ySetting('dyslexicFont')"
+                        class="form-checkbox h-4 w-4 text-primary rounded border-slate-300 focus:ring-primary">
+                </label>
+            </div>
+        </div>
+        <!-- Toggle Button -->
+        <button onclick="toggleA11yMenu()"
+            class="size-14 bg-primary text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:-translate-y-1 hover:bg-primary/90 transition-all border-2 border-white/20">
+            <span class="material-symbols-outlined text-[28px]">accessible</span>
+        </button>
+    </div>
+</body>
+
+</html>

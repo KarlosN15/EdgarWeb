@@ -1,0 +1,102 @@
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-outlined.fill-1 {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+main {
+    padding-top: 80px;
+    /* Offset for the fixed header */
+}
+
+/* Make anchor tags account for the fixed header */
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 100px;
+}
+
+/* Accessibility Modes */
+.a11y-high-contrast {
+    background-color: #000 !important;
+    color: #ffff00 !important;
+}
+
+.a11y-high-contrast * {
+    background-color: #000 !important;
+    color: #ffff00 !important;
+    border-color: #ffff00 !important;
+}
+
+.a11y-high-contrast img,
+.a11y-high-contrast iframe {
+    filter: grayscale(1) contrast(1.5) invert(1) hue-rotate(180deg) !important;
+}
+
+.a11y-high-contrast .bg-primary,
+.a11y-high-contrast .text-primary,
+.a11y-high-contrast .border-primary {
+    background-color: #000 !important;
+    color: #ffff00 !important;
+    border-color: #ffff00 !important;
+}
+
+.a11y-high-contrast .bg-white,
+.a11y-high-contrast .bg-slate-50,
+.a11y-high-contrast .bg-slate-100,
+.a11y-high-contrast .dark\:bg-slate-900,
+.a11y-high-contrast .bg-background-light {
+    background-color: #000 !important;
+}
+
+.a11y-large-text {
+    font-size: 115% !important;
+}
+
+.a11y-large-text p,
+.a11y-large-text span,
+.a11y-large-text li,
+.a11y-large-text a,
+.a11y-large-text h1,
+.a11y-large-text h2,
+.a11y-large-text h3,
+.a11y-large-text h4,
+.a11y-large-text h5,
+.a11y-large-text div {
+    font-size: 115% !important;
+}
+
+.a11y-large-text h1 {
+    font-size: calc(2.25rem * 1.15) !important;
+}
+
+.a11y-large-text h2 {
+    font-size: calc(1.875rem * 1.15) !important;
+}
+
+.a11y-large-text h3 {
+    font-size: calc(1.5rem * 1.15) !important;
+}
+
+.a11y-large-text text-xl {
+    font-size: calc(1.25rem * 1.15) !important;
+}
+
+.a11y-large-text text-lg {
+    font-size: calc(1.125rem * 1.15) !important;
+}
+
+.a11y-dyslexic-font * {
+    font-family: "Comic Sans MS", "Comic Sans", "Arial", sans-serif !important;
+    letter-spacing: 0.5px !important;
+    word-spacing: 1px !important;
+}
